@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>AvitoCall</title>
+		<meta charset="utf-8">
+		<link href="./auth.css" rel="stylesheet">
+    	<script src="adapter.js"></script>
+    	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    	<script type="text/javascript" src="./constants.js"></script>
+    	<script type="text/javascript" src="./auth.js"></script>
+    </head>
+    <body>
+	    <div class='PageWrapper'>
+	        <div class='Page'>
+	            <div class='Header'>
+	            	<img src='avito-logo.svg' alt="logo" height="40"/>
+	            	<div class='Title'> Звонки </div>
+	            </div>
+	            <div class='TopMenu'>
+          			<a id="login"> Вход </a>
+          			<a id="register"> Регистрация </a>
+        		</div>
+			    <div class='Form' id='LoginForm'>
+        			<input id='LoginUsername' placeholder='Введите логин' value=''/>
+        			<input id='LoginPassword' placeholder='Введите пароль' type='password' value=''/>
+        			<button id="loginButton"> Войти </button>
+      			</div>
+      			<div class='Form' id='RegisterForm'>
+        			<input id='RegisterUsername' placeholder='Введите логин' value=''  />
+        			<input id='RegisterPassword' placeholder='Введите пароль' type='password' value='' />
+        			<input id='RegisterConfirmPassword' placeholder='Подтвердите пароль' type='password' value='' />
+        			<button id="RegisterButton"> Зарегестрироваться </button>
+      			</div>
+	        </div>
+	      </div>
+    </body>
+    
+</html>
