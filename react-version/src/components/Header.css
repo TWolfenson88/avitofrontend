@@ -1,0 +1,17 @@
+.TopMenu {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0px 16px 0px;
+  padding-left: 45px;
+  font-size: 16pt;
+  align-items: center;
+}
+
+.TopMenu > a {
+  padding-left: 12px;
+  text-decoration: none;
+  color: #009cf0;
+  padding-bottom: 0px;
+  font-size: 15pt;
+  padding-left: 12px;
+}
