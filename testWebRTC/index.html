@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>AvitoCall</title>
+		<meta charset="utf-8">
+		<link href="./main.css" rel="stylesheet">
+    	<script src="adapter.js"></script>
+    	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    	<script type="text/javascript" src="./constants.js"></script>
+    	<script type="text/javascript" src="./main.js"></script>
+    	<script type="text/javascript" src="./call.js"></script>
+    </head>
+    <body>
+    	<div class='PageWrapper'>
+	        <div class='Page'>
+	        	<div class='Header'>
+	            	<img src='avito-logo.svg' alt="logo" height="40"/>
+	            	<div class='Title'> Звонки </div>
+	            </div>
+	            <p class='UserName'></p>
+    			<div class="wrapper">
+    				<div class="userBox">
+	        			<ul class='userList'></ul>
+	        			<div class="dialogWindow">
+	        				<div class="emptyCompanionWindow">Выберете абонента</div>
+	          				<div class="companionWindow"> 
+	          					<p class="companionName"></p>
+	          					<img src='./communications.svg' alt="call" height="32" onclick="call();startCall();">
+	          				</div>
+	        			</div>
+	        		</div>
+        			<div class="camerabox" id="camerabox">
+    					<video id="received_video" autoplay></video>
+    					<video id="local_video" autoplay muted></video>
+    					<button id="hangup-button" onclick="hangUpCall();" role="button" >
+    						Hang Up
+    					</button>
+    				</div>
+      			</div>
+    		</div>
+    	</div>
+    </body>
+</html>
